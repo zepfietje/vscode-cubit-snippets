@@ -1,0 +1,85 @@
+{
+  "CubitProvider": {
+    "prefix": "cubit-provider",
+    "body": [
+      "CubitProvider(",
+      "\tcreate: (context) => ${1:Subject}Cubit(),",
+      "\tchild: ${2:Container()},",
+      ")"
+    ]
+  },
+  "MultiCubitProvider": {
+    "prefix": "multi-cubit-provider",
+    "body": [
+      "MultiCubitProvider(",
+      "\tproviders: [",
+      "\t\tCubitProvider(",
+      "\t\t\tcreate: (context) => ${1:Subject}Cubit(),",
+      "\t\t),",
+      "\t\tCubitProvider(",
+      "\t\t\tcreate: (context) => ${2:Subject}Cubit(),",
+      "\t\t),",
+      "\t],",
+      "\tchild: ${3:Container()},",
+      ")"
+    ]
+  },
+  "CubitBuilder": {
+    "prefix": "cubit-builder",
+    "body": [
+      "CubitBuilder<${1:Subject}Cubit, $1State>(",
+      "\tbuilder: (context, state) {",
+      "\t\treturn ${3:Container()};",
+      "\t},",
+      ")"
+    ]
+  },
+  "CubitListener": {
+    "prefix": "cubit-listener",
+    "body": [
+      "CubitListener<${1:Subject}Cubit, $1State>(",
+      "\tlistener: (context, state) {",
+      "\t\t${2:// TODO: implement listener}",
+      "\t},",
+      "\tchild: ${3:Container()},",
+      ")"
+    ]
+  },
+  "MultiCubitListener": {
+    "prefix": "multi-cubit-listener",
+    "body": [
+      "MultiCubitListener(",
+      "\tlisteners: [",
+      "\t\tCubitListener<${1:Subject}Cubit, $1State>(",
+      "\t\t\tlistener: (context, state) {",
+      "\t\t\t\t${2:// TODO: implement listener}",
+      "\t\t\t},",
+      "\t\t),",
+      "\t\tCubitListener<${3:Subject}Cubit, $3State>(",
+      "\t\t\tlistener: (context, state) {",
+      "\t\t\t\t${4:// TODO: implement listener}",
+      "\t\t\t},",
+      "\t\t),",
+      "\t],",
+      "\tchild: ${5:Container()},",
+      ")"
+    ]
+  },
+  "CubitConsumer": {
+    "prefix": "cubit-consumer",
+    "body": [
+      "CubitConsumer<${1:Subject}Cubit, $1State>(",
+      "\tlistener: (context, state) {",
+      "\t\t${2:// TODO: implement listener}",
+      "\t},",
+      "\tbuilder: (context, state) {",
+      "\t\treturn ${3:Container()};",
+      "\t},",
+      ")"
+    ]
+  },
+  "context<SubjectCubit>.cubit()": {
+    "prefix": "cubit",
+    "body": "context.cubit<${1:Subject}Cubit>()"
+  }
+}
