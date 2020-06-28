@@ -81,5 +81,19 @@
   "context<SubjectCubit>.cubit()": {
     "prefix": "cubit",
     "body": "context.cubit<${1:Subject}Cubit>()"
+  },
+  "CubitObserver": {
+    "prefix": "cubit-observer",
+    "body": [
+      "import 'package:cubit/cubit.dart';",
+      "",
+      "class ${1:My}CubitObserver extends CubitObserver {",
+      "\t@override",
+      "\tvoid onTransition(Cubit cubit, Transition transition) {",
+      "\t\t${4:// TODO: implement onTransition}",
+      "\t\tsuper.onTransition(cubit, transition);",
+      "\t}",
+      "}"
+    ]
   }
 }

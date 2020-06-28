@@ -25,6 +25,7 @@ $ code --install-extension zepfietje.cubit-snippets
 | multi-cubit-listener | `MultiCubitListener` widget     |
 | cubit-consumer       | `CubitConsumer` widget          |
 | cubit                | `context<SubjectCubit>.cubit()` |
+| cubit-observer       | `CubitObserver` class           |
 
 ## Starware
 
