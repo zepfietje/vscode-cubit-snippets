@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0] - 2020-06-29
+
+### Changed
+
+- Remove hyphens from prefixes.
+- Update icon.
+
 ## [1.1.0] - 2020-06-28
 
 ### Added
@@ -12,5 +19,6 @@
 
 - Cubit snippets.
 
+[1.2.0]: https://github.com/zepfietje/vscode-cubit-snippets/releases/tag/1.2.0
 [1.1.0]: https://github.com/zepfietje/vscode-cubit-snippets/releases/tag/1.1.0
 [1.0.0]: https://github.com/zepfietje/vscode-cubit-snippets/releases/tag/1.0.0
