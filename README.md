@@ -16,16 +16,16 @@ $ code --install-extension zepfietje.cubit-snippets
 
 ## Usage
 
-| Trigger              | Description                     |
-| -------------------- | ------------------------------- |
-| cubit-provider       | `CubitProvider` widget          |
-| multi-cubit-provider | `MultiCubitProvider` widget     |
-| cubit-builder        | `CubitBuilder` widget           |
-| cubit-listener       | `CubitListener` widget          |
-| multi-cubit-listener | `MultiCubitListener` widget     |
-| cubit-consumer       | `CubitConsumer` widget          |
-| cubit                | `context<SubjectCubit>.cubit()` |
-| cubit-observer       | `CubitObserver` class           |
+| Trigger            | Description                     |
+| ------------------ | ------------------------------- |
+| cubitprovider      | `CubitProvider` widget          |
+| multicubitprovider | `MultiCubitProvider` widget     |
+| cubitbuilder       | `CubitBuilder` widget           |
+| cubitlistener      | `CubitListener` widget          |
+| multicubitlistener | `MultiCubitListener` widget     |
+| cubitconsumer      | `CubitConsumer` widget          |
+| cubit              | `context<SubjectCubit>.cubit()` |
+| cubitobserver      | `CubitObserver` class           |
 
 ## Starware
 

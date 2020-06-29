@@ -1,6 +1,6 @@
 {
   "CubitProvider": {
-    "prefix": "cubit-provider",
+    "prefix": "cubitprovider",
     "body": [
       "CubitProvider(",
       "\tcreate: (context) => ${1:Subject}Cubit(),",
@@ -9,7 +9,7 @@
     ]
   },
   "MultiCubitProvider": {
-    "prefix": "multi-cubit-provider",
+    "prefix": "multicubitprovider",
     "body": [
       "MultiCubitProvider(",
       "\tproviders: [",
@@ -25,7 +25,7 @@
     ]
   },
   "CubitBuilder": {
-    "prefix": "cubit-builder",
+    "prefix": "cubitbuilder",
     "body": [
       "CubitBuilder<${1:Subject}Cubit, $1State>(",
       "\tbuilder: (context, state) {",
@@ -35,7 +35,7 @@
     ]
   },
   "CubitListener": {
-    "prefix": "cubit-listener",
+    "prefix": "cubitlistener",
     "body": [
       "CubitListener<${1:Subject}Cubit, $1State>(",
       "\tlistener: (context, state) {",
@@ -46,7 +46,7 @@
     ]
   },
   "MultiCubitListener": {
-    "prefix": "multi-cubit-listener",
+    "prefix": "multicubitlistener",
     "body": [
       "MultiCubitListener(",
       "\tlisteners: [",
@@ -66,7 +66,7 @@
     ]
   },
   "CubitConsumer": {
-    "prefix": "cubit-consumer",
+    "prefix": "cubitconsumer",
     "body": [
       "CubitConsumer<${1:Subject}Cubit, $1State>(",
       "\tlistener: (context, state) {",
@@ -83,7 +83,7 @@
     "body": "context.cubit<${1:Subject}Cubit>()"
   },
   "CubitObserver": {
-    "prefix": "cubit-observer",
+    "prefix": "cubitobserver",
     "body": [
       "import 'package:cubit/cubit.dart';",
       "",
