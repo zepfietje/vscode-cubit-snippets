@@ -16,16 +16,21 @@ $ code --install-extension zepfietje.cubit-snippets
 
 ## Usage
 
-| Trigger            | Description                     |
-| ------------------ | ------------------------------- |
-| cubitprovider      | `CubitProvider` widget          |
-| multicubitprovider | `MultiCubitProvider` widget     |
-| cubitbuilder       | `CubitBuilder` widget           |
-| cubitlistener      | `CubitListener` widget          |
-| multicubitlistener | `MultiCubitListener` widget     |
-| cubitconsumer      | `CubitConsumer` widget          |
-| cubit              | `context<SubjectCubit>.cubit()` |
-| cubitobserver      | `CubitObserver` class           |
+| Trigger              | Description                     |
+| -------------------- | ------------------------------- |
+| cubitprovider        | `CubitProvider` widget          |
+| multicubitprovider   | `MultiCubitProvider` widget     |
+| cubitbuilder         | `CubitBuilder` widget           |
+| cubitlistener        | `CubitListener` widget          |
+| multicubitlistener   | `MultiCubitListener` widget     |
+| cubitconsumer        | `CubitConsumer` widget          |
+| cubit                | `context<SubjectCubit>.cubit()` |
+| cubitobserver        | `CubitObserver` class           |
+| cubitstate           | `SubjectVerbState` class        |
+| cubitstateinitial    | `SubjectInitial` class          |
+| cubitstateinprogress | `SubjectVerbInProgress` class   |
+| cubitstatesuccess    | `SubjectVerbSuccess` class      |
+| cubitstatefailure    | `SubjectVerbFailure` class      |
 
 ## Starware
 

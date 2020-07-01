@@ -95,5 +95,57 @@
       "\t}",
       "}"
     ]
+  },
+  "SubjectVerbState": {
+    "prefix": "cubitstate",
+    "body": [
+      "class ${1:Subject}${2:Verb}${3:State} extends $1State {",
+      "\tconst $1$2$3($5);",
+      "",
+      "$4",
+      "",
+      "\t@override",
+      "\tList<Object> get props => [$6];",
+      "}"
+    ],
+    "description": "Subject + Verb (action) + State"
+  },
+  "SubjectInitial": {
+    "prefix": "cubitstateinitial",
+    "body": "class ${1:Subject}Initial extends $1State {}",
+    "description": "Subject + Initial"
+  },
+  "SubjectVerbInProgress": {
+    "prefix": "cubitstateinprogress",
+    "body": "class ${1:Subject}${2:Verb}InProgress extends $1State {}",
+    "description": "Subject + Verb (action) + InProgress"
+  },
+  "SubjectVerbSuccess": {
+    "prefix": "cubitstatesuccess",
+    "body": [
+      "class ${1:Subject}${2:Verb}Success extends $1State {",
+      "\tconst $1$2Success($4);",
+      "",
+      "\t$3",
+      "",
+      "\t@override",
+      "\tList<Object> get props => [$5];",
+      "}"
+    ],
+    "description": "Subject + Verb (action) + Success"
+  },
+  "SubjectVerbFailure": {
+    "prefix": "cubitstatefailure",
+    "body": [
+      "class ${1:Subject}${2:Verb}Failure extends $1State {",
+      "\tconst $1$2Failure(this.error);",
+      "",
+      "\tfinal Exception error;",
+      "",
+      "\t@override",
+      "\tList<Object> get props => [error];",
+      "}"
+    ],
+    "description": "Subject + Verb (action) + Failure"
   }
 }
